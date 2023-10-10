@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 const Navbarcomponent = () => {
   return (
     <>
@@ -8,9 +9,11 @@ const Navbarcomponent = () => {
               Tour Tech
             </a>
           </div>
-          <button className="bg-transparent px-3 py-1 text-white border rounded">
-            Login
-          </button>
+          <Link to="/login">
+            <button className="bg-transparent px-3 py-1 text-white border rounded">
+              Login
+            </button>
+          </Link>
         </nav>
       </div>
     </>

@@ -1,15 +1,9 @@
-import { Children } from "react";
-
 const Button = (props) => {
-  const { color, Children, onClick = () => {}, type = "button" } = props;
+  const { children, variant } = props;
   return (
     <>
-      <button
-        type={type}
-        className={`${color} hover:bg-blue-600 rounded px-3 text-white fw-bold text-sm w-full  `}
-        onClick={onClick}
-      >
-        {Children}
+      <button className={`  rounded px-3 text-white fw-bold w-100 mt-3  `}>
+        {children}
       </button>
     </>
   );

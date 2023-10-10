@@ -1,5 +1,6 @@
 import Button from "../Component/Elements/Buttons/Button";
 import Bgimage from "../assets/welcomeimg.png";
+import { Link } from "react-router-dom";
 
 const Registerpages = () => {
   return (
@@ -17,29 +18,53 @@ const Registerpages = () => {
         >
           {" "}
           <div className="body">
-            <div class="login-container">
-              <form class="login-form">
+            <div className="login-container">
+              <div className="text-center text-white lh-1 mb-5">
+                <h2 className="fw-bold">Tour Tech</h2>
+                <p className="small fw-bold">
+                  Buka Pintu ke Dunia yang Luar Biasa
+                </p>
+              </div>
+              <form className="login-form">
                 <h2>Register</h2>
-                <div class="form-group">
-                  <label for="username">Username</label>
-                  <input type="text" id="username" name="username" required />
+                <div className="form-group">
+                  <label for="username">Nama Pengguna</label>
+                  <input
+                    type="text"
+                    id="username"
+                    name="username"
+                    placeholder="masukan nama"
+                    required
+                  />
                 </div>
-                <div class="form-group">
+                <div className="form-group">
                   <label for="email">Email</label>
-                  <input type="email" id="email" name="email" required />
+                  <input
+                    type="email"
+                    id="email"
+                    name="email"
+                    placeholder="Masukan Email "
+                    required
+                  />
                 </div>
-                <div class="form-group">
-                  <label for="password">Password</label>
+                <div className="form-group">
+                  <label for="password">Kata sandi</label>
                   <input
                     type="password"
                     id="password"
                     name="password"
+                    placeholder="masukan kata sandi"
                     required
                   />
                 </div>
-
-                <Button>Register</Button>
+                <h6 className="text-white">
+                  Sudah punya Akun?{" "}
+                  <Link to="/login" className="text-decoration-none">
+                    Masuk sekarang
+                  </Link>
+                </h6>
               </form>
+              <Button>Register</Button>
             </div>
           </div>
         </div>

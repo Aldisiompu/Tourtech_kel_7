@@ -1,5 +1,6 @@
-import Bgimage from "../assets/welcomeimg.png";
 import Button from "../Component/Elements/Buttons/Button";
+import Bgimage from "../assets/welcomeimg.png";
+import { Link } from "react-router-dom";
 
 const Loginpages = () => {
   return (
@@ -17,28 +18,43 @@ const Loginpages = () => {
         >
           {" "}
           <div className="body">
-            <div class="login-container">
-              <form class="login-form">
+            <div className="login-container">
+              <div className="text-center text-white lh-1 mb-5">
+                <h2 className="fw-bold">Tour Tech</h2>
+                <p className="small fw-bold">
+                  Buka Pintu ke Dunia yang Luar Biasa
+                </p>
+              </div>
+              <form className="login-form">
                 <h2>Login</h2>
-                <div class="form-group">
-                  <label for="username">Username</label>
-                  <input type="text" id="username" name="username" required />
+                <div className="form-group">
+                  <label for="username">Email</label>
+                  <input
+                    type="email"
+                    id="email"
+                    name="email"
+                    placeholder="masukan email "
+                    required
+                  />
                 </div>
-                <div class="form-group">
-                  <label for="email">Email</label>
-                  <input type="email" id="email" name="email" required />
-                </div>
-                <div class="form-group">
-                  <label for="password">Password</label>
+                <div className="form-group">
+                  <label for="email">Katas sandi</label>
                   <input
                     type="password"
                     id="password"
                     name="password"
+                    placeholder="masukan kata sanda"
                     required
                   />
                 </div>
-                <Button>Login</Button>
+                <h6 className="text-white text-start w-100">
+                  Belum punya akun?{" "}
+                  <Link to="/register" className="text-decoration-none ">
+                    Daftar di sini
+                  </Link>
+                </h6>
               </form>
+              <Button>Masuk</Button>
             </div>
           </div>
         </div>
