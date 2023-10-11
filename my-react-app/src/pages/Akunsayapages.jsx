@@ -83,7 +83,7 @@ const Akunsayapages = () => {
            
             </div>
             <div class="d-flex ">
-            <button class="ms-auto rounded-2">Edit</button>
+            <a href="/akun" className="ms-auto rounded-2"> <button class="ms-auto rounded-2">Edit</button></a>
             </div>
           </div>
         </div>
