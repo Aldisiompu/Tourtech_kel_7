@@ -141,4 +141,68 @@ button:hover {
   background-color: #184675;
 }
 
+
 /* style halaman login end */
+
+/* Navbar Wisata */
+.flexcontainer{
+  left: 15%;
+  top: 30%;
+  position: absolute;
+}
+.text{
+  align-self: stretch;
+  color: #ffffff;
+  font-size: 60px;
+  font-weight: 700;
+  line-height: 60px;
+}
+.Nav{
+  
+  border-bottom: 1px solid white;
+}
+.title-desc{
+  margin-bottom: 50px;
+}
+.card-box{
+  height: 683px;
+  width: 1281px;
+  position: absolute;
+  top: 100%;
+  background: linear-gradient( rgb(9, 64, 96) , rgb(36, 83, 112), rgb(49, 112, 150));
+}
+
+.flex-card-box{
+  justify-content: space-around;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.text-box{
+  margin-left: 40px;
+  text-align: justify;
+  width: 325px;
+  font-size: 16px;
+  letter-spacing: 0;
+  margin-right: 20px;
+}
+.image-container{
+  display: flex;
+
+  justify-content: space-evenly;
+}
+.image-container img{
+  padding-right: 40px;
+}
+img:last-child{
+  padding-right: none;
+  
+}
+.card-box{
+  padding-bottom: 60px;
+  
+}
+.text-space{
+  line-height: 4px;
+}
