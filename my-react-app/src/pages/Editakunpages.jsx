@@ -1,53 +1,67 @@
-import Footercomponent from "../Component/Fragments/Footercomponent";
+
 import Navbarwisata from "../Component/Fragments/Navbarwisata";
-import Bgimage from "../assets/img/BgAkun.png";
-import image1 from "../assets/img/pemandu/aldi.jpeg"
-// import image2 from "../assets/img/pemandu/Vector.png"
+import Bgimage from "../assets/img/wisata/BgAkun.png";
+import image1 from "../assets/img/pemandu/aldi.jpeg";
+import image2 from "../assets/img/pemandu/Vector.png";
+
 const Editakunpages = () => {
   return (
-    <>
-      <div className="login  h-vh-100">
+     <>
+    <div className="editakun h-vh-100">
+    
+      <div
+        className="bg-image"
+        style={{
+          backgroundImage: `url(${Bgimage})`,
+          backgroundSize: "cover",
+          backgroundRepeat: "no-repeat",
+          backgroundPosition: "center top",
+          height: "110vh",
+        }}
+      >
+          <Navbarwisata />
         
-        <div
-          className="bg-image"
-          style={{
-            backgroundImage: `url(${Bgimage})`,
-            backgroundSize: "cover",
-            backgroundRepeat: "no-repeat",
-            backgroundPosition: "center center",
-            height: "100vh", 
+       
+      <div className="text-wrapper "  style={{
+        color:"white",
+        fontSize:"64px",
+        fontWeight:"700",
+        lineHeight:"30px",
+        textAlign:"right",
+        paddingTop:"400px",
+        marginRight:"80px",
+        fontFamily:"serif"
+      }}>Halaman Profil
+    </div>
+      </div>
       
-           
-          }}
-        >
-        <Navbarwisata/>
-         
-          <div className="body">
-          
-            <div className="login-container">
-            <div className="backakun d-block mt-0 ">
+      <div className="akun-container justify-content-center align-items-center  ">
+        <div className="akun row mx-auto p-4 gap-3 ">
+        <div className="backakun d-block  ">
+            <a href="/akunsaya"><img src={image2} alt="" /></a>
+
+
           </div>
-            <div className="d-flex gap-3">
-            <div className="d-flex align-items-center justify-content-center"   >
-              <div>
-              <img src={image1} alt="" className="d-flex justify-content-center align-items-center my-auto"
-               style={{
-                height:"250px",
-                width:"250px",
-                borderRadius:"100%",
-                objectFit:"fill"
-           
-                
-               }}
-               />
-               <p className="text-white display-6 fw-bold mt-3">Aldi</p>
-              </div>
-              
+          <div className="d-flex gap-5">
+          <div className="kotak col-md-4 text-center text-gray mt-5  ms-2 ">
+            <div className="mb-4">
+              <img
+                src={image1}
+                alt="Profil Aldi"
+                className="img-fluid rounded-circle"
+                style={{
+                  width: "200px",
+                  height: "200px",
+                  objectFit: "cover",
+                  paddingBottom:"7px"
+                }}
+              />
+                <p className="text-white display-6 fw-bold mt-3">Aldi</p>
             </div>
-              <div className="text-center text-white lh-1 mb-5">
-              </div>
-              <form className="login-form">
-                <h2>Edit Data</h2>
+          </div>
+          <div className="col-md-7 text-center text-white  ml-auto ">            
+            <h2 className="mb-4 fw-bold ">Edit Data</h2>
+            <form className="login-form ">
                 <div className="form-group">
                   <label for="username">Username</label>
                   <input
@@ -91,17 +105,23 @@ const Editakunpages = () => {
                 </div>
               </form>
            
+          </div>
+          
             </div>
-            <div class="d-flex ">
-            <a href="/akunsaya" className="ms-auto rounded-2"> <button class="ms-auto rounded-2">Simpan</button></a>
+            <div className="button "
+            style={{
+              marginLeft:"860px"
+            }}>
+            <a href="/akunsaya" className="button ms-auto rounded-2"> <button class="ms-auto rounded-2">Simpan</button></a>
             </div>
           </div>
         </div>
       </div>
-      <Footercomponent/>
-      </div>
+
         
     </>
+
   );
 };
+
 export default Editakunpages;
