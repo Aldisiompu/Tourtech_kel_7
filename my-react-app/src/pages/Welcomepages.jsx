@@ -1,6 +1,6 @@
 import Navbarcomponent from "../Component/Fragments/Navbarcomponent";
 import Cardpages from "./Cardpages";
-import Bgimage from "../assets/welcomeimg.png";
+import Bgimage from "../assets/img/welcomeimg.png";
 
 const Welcomepages = () => {
   return (

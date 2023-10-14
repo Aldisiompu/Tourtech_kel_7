@@ -1,6 +1,6 @@
-import Bgimage from "../assets/img/wisata/BgAkun.png";
+import Bgimage from "../assets/img/BgAkun.png";
 import image1 from "../assets/img/pemandu/aldi.jpeg"
-import image2 from "../assets/img/pemandu/Vector.png"
+// import image2 from "../assets/img/pemandu/Vector.png"
 const Editakunpages = () => {
   return (
     <>
@@ -23,8 +23,6 @@ const Editakunpages = () => {
           
             <div className="login-container">
             <div className="backakun d-block mt-0 ">
-            
-            <a href="/akunsaya"><img src={image2} alt="" /></a>
           </div>
             <div className="d-flex gap-3">
             <div className="d-flex align-items-center justify-content-center"   >

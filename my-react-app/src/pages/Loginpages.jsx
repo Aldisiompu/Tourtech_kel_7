@@ -1,5 +1,5 @@
 import Button from "../Component/Elements/Buttons/Button";
-import Bgimage from "../assets/welcomeimg.png";
+import Bgimage from "../assets/img/welcomeimg.png";
 import { Link } from "react-router-dom";
 
 const Loginpages = () => {
@@ -54,7 +54,7 @@ const Loginpages = () => {
                   </Link>
                 </h6>
               </form>
-              <Button>Masuk</Button>
+              <a href="/home"><Button>Masuk</Button></a>
             </div>
           </div>
         </div>
