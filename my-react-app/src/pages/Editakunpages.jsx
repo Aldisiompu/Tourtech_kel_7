@@ -1,3 +1,4 @@
+
 import Navbarwisata from "../Component/Fragments/Navbarwisata";
 import Bgimage from "../assets/img/wisata/BgAkun.png";
 import image1 from "../assets/img/pemandu/aldi.jpeg";
@@ -5,6 +6,7 @@ import image2 from "../assets/img/pemandu/Vector.png";
 
 const Editakunpages = () => {
   return (
+     <>
     <div className="editakun h-vh-100">
     
       <div
@@ -37,6 +39,8 @@ const Editakunpages = () => {
         <div className="akun row mx-auto p-4 gap-3 ">
         <div className="backakun d-block  ">
             <a href="/akunsaya"><img src={image2} alt="" /></a>
+
+
           </div>
           <div className="d-flex gap-5">
           <div className="kotak col-md-4 text-center text-gray mt-5  ms-2 ">
@@ -113,7 +117,10 @@ const Editakunpages = () => {
           </div>
         </div>
       </div>
-      
+
+        
+    </>
+
   );
 };
 
