@@ -10,6 +10,7 @@ import num1 from "../assets/img/wisata/wisataA/01.png"
 import num2 from "../assets/img/wisata/wisataA/02.png"
 import num3 from "../assets/img/wisata/wisataA/03.png"
 import React from 'react';
+import Footercomponent from "../Component/Fragments/Footercomponent";
 
 const WisatapagesA = () => {
     return (
@@ -132,6 +133,7 @@ const WisatapagesA = () => {
             </div>
           </section>
         </div>
+        <Footercomponent/>
       </div>
     );
   };

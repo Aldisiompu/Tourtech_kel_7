@@ -1,10 +1,19 @@
+
 import Navbarwisata from "../Component/Fragments/Navbarwisata";
 import Bgimage from "../assets/img/wisata/BgAkun.png";
 import image1 from "../assets/img/pemandu/aldi.jpeg";
 // import image2 from "../assets/img/pemandu/Vector.png";
+import Button from "../Component/Elements/Buttons/Button";
+import Bgimage from "../assets/img/BgAkun.png";
+import { Link } from "react-router-dom";
+import image from "../assets/img/pemandu/aldi.jpeg"
+import Footercomponent from "../Component/Fragments/Footercomponent";
+
 
 const Editakunpages = () => {
   return (
+     <>
+
     <div className="editakun h-vh-100">
     
       <div
@@ -93,6 +102,7 @@ const Editakunpages = () => {
           </div>
           
             </div>
+
             <div className="button "
             style={{
               marginLeft:"880px"
@@ -103,6 +113,10 @@ const Editakunpages = () => {
         </div>
       </div>
       
+
+            
+        
+    </>
   );
 };
 
