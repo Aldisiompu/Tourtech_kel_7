@@ -4,56 +4,59 @@ import Nav from 'react-bootstrap/Nav';
 import NavDropdown from 'react-bootstrap/NavDropdown';
 
 const Navbarwisata = () => {
-return (
-    <Navbar className = "Nav">
-    <Container>
-        <Navbar.Brand style={{color:'white', textDecoration:'none'}} href="#home">Tour Tech</Navbar.Brand>
-        <Navbar.Toggle />
-        <Nav className="justify-content-end" activeKey="/home" >
+  return (
+    <Navbar className="Nav" expand="lg">
+      <Container>
+        <div className="d-flex justify-content-between w-100">
+          <Navbar.Brand style={{ color: 'white' }} href="#home">
+            Tour Tech
+          </Navbar.Brand>
+          <Navbar.Toggle aria-controls="basic-navbar-nav" />
+        </div>
+        <Navbar.Collapse id="basic-navbar-nav">
+          <Nav className="ml-auto" activeKey="/home">
             <Nav.Item>
-            <Nav.Link style={{color: 'white', marginRight:'50px'}} href="/home">Beranda</Nav.Link>
-            </Nav.Item>
-            <NavDropdown 
-                id="nav-dropdown-dark-example"
-                title={<span style={{ color: 'white' }}>Wisata</span>}
-                menuVariant="white"
-                style={{marginRight:'50px'}}
-                >
-                <NavDropdown.Item href="#action/3.1">Alam</NavDropdown.Item>
-                <NavDropdown.Item href="#action/3.2">
-                    Sejarah
-                </NavDropdown.Item>
-                <NavDropdown.Item href="#action/3.3">Budaya</NavDropdown.Item>
-            </NavDropdown>
-            <NavDropdown
-                id="nav-dropdown-dark-example"
-                title={<span style={{ color: 'white' }}>Pemandu</span>}
-                menuVariant="white"
-                style={{marginRight:'50px'}}
-                >
-                <NavDropdown.Item href="#action/3.1">Data Pemandu</NavDropdown.Item>
-                <NavDropdown.Item href="#action/3.2">
-                    Daftar
-                </NavDropdown.Item>    
-            </NavDropdown>
-            <Nav.Item>
-            <Nav.Link style={{color: 'white', marginRight:'50px'}} eventKey="/testimoni" >Testimoni</Nav.Link>
+              <Nav.Link style={{ color: 'white', marginRight: '50px' }} href="/home">
+                Beranda
+              </Nav.Link>
             </Nav.Item>
             <NavDropdown
-                id="nav-dropdown-dark-example"
-                title={<span style={{ color: 'white' }}>User</span>}
-                menuVariant="white"
-                
-                >
-                <NavDropdown.Item href="#action/3.1">Akun Saya</NavDropdown.Item>
-                <NavDropdown.Item href="#action/3.2">
-                    Logout
-                </NavDropdown.Item>    
+              id="nav-dropdown-dark-example"
+              title={<span style={{ color: 'white' }}>Wisata</span>}
+              menuVariant="white"
+              style={{ marginRight: '50px' }}
+            >
+              <NavDropdown.Item href="/wisataA">Alam</NavDropdown.Item>
+              <NavDropdown.Item href="/wisataS">Sejarah</NavDropdown.Item>
+              <NavDropdown.Item href="/wisata">Budaya</NavDropdown.Item>
             </NavDropdown>
-        </Nav>
-    </Container>
+            <NavDropdown
+              id="nav-dropdown-dark-example"
+              title={<span style={{ color: 'white' }}>Pemandu</span>}
+              menuVariant="white"
+              style={{ marginRight: '50px' }}
+            >
+              <NavDropdown.Item href="#action/3.1">Data Pemandu</NavDropdown.Item>
+              <NavDropdown.Item href="#action/3.2">Daftar</NavDropdown.Item>
+            </NavDropdown>
+            <Nav.Item>
+              <Nav.Link style={{ color: 'white', marginRight: '50px', textDecoration: 'none' }} eventKey="/testimoni">
+                Testimoni
+              </Nav.Link>
+            </Nav.Item>
+            <NavDropdown
+              id="nav-dropdown-dark-example"
+              title={<span style={{ color: 'white' }}>User</span>}
+              menuVariant="white"
+            >
+              <NavDropdown.Item href="/akunsaya">Akun Saya</NavDropdown.Item>
+              <NavDropdown.Item href="/login">Logout</NavDropdown.Item>
+            </NavDropdown>
+          </Nav>
+        </Navbar.Collapse>
+      </Container>
     </Navbar>
-);
+  );
 }
 
 export default Navbarwisata;

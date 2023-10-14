@@ -1,5 +1,5 @@
 import Button from "../Component/Elements/Buttons/Button";
-import Bgimage from "../assets/img/wisata/BgAkun.png";
+import Bgimage from "../assets/img/BgAkun.png";
 import { Link } from "react-router-dom";
 import image from "../assets/img/pemandu/aldi.jpeg"
 
@@ -38,7 +38,7 @@ const Akunsayapages = () => {
                }}
                />
                <p className="text-white display-6 fw-bold mt-3">Aldi</p>
-               
+
               </div>
               
             </div>
@@ -83,7 +83,7 @@ const Akunsayapages = () => {
            
             </div>
             <div class="d-flex ">
-            <a href="/akun" className="ms-auto rounded-2"> <button class="ms-auto rounded-2">Edit</button></a>
+            <a href="/edit" className="ms-auto rounded-2"> <button class="ms-auto rounded-2">Edit</button></a>
             </div>
           </div>
         </div>

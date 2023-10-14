@@ -1,8 +1,9 @@
+import Navbarwisata from "../Component/Fragments/Navbarwisata";
+
 const Homepages = () => {
   return (
     <div className="Home">
-      <p>Home pages</p>
-      <p>ini adalah jalan terbaik</p>
+      <Navbarwisata/>
     </div>
   );
 };
