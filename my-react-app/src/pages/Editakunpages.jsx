@@ -1,3 +1,5 @@
+import Footercomponent from "../Component/Fragments/Footercomponent";
+import Navbarwisata from "../Component/Fragments/Navbarwisata";
 import Bgimage from "../assets/img/BgAkun.png";
 import image1 from "../assets/img/pemandu/aldi.jpeg"
 // import image2 from "../assets/img/pemandu/Vector.png"
@@ -5,6 +7,7 @@ const Editakunpages = () => {
   return (
     <>
       <div className="login  h-vh-100">
+        
         <div
           className="bg-image"
           style={{
@@ -17,7 +20,7 @@ const Editakunpages = () => {
            
           }}
         >
-          {" "}
+        <Navbarwisata/>
          
           <div className="body">
           
@@ -95,6 +98,7 @@ const Editakunpages = () => {
           </div>
         </div>
       </div>
+      <Footercomponent/>
       </div>
         
     </>

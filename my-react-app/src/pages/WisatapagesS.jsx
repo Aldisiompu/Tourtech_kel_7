@@ -7,10 +7,10 @@ import PPicture from '../assets/img/wisata/wisataS/people2.png';
 import React from 'react'
 import Footercomponent from '../Component/Fragments/Footercomponent';
 
+
 const WisatapagesS = () => {
     return (
         <>
-        <container>
         <div
             className="bg-image img-fluid"
             style={{
@@ -64,18 +64,19 @@ const WisatapagesS = () => {
             <WisataScard />
             </div>
             <div className="d-flex justify-content-center align-items-center">
-            <div style={{ width: '500px', marginRight: '15rem' }}>
-                <h1 className="text-center ms-5 fw-bold">Jendela Ke Masa Lalu</h1>
-                <p style={{ textAlign: 'justify' }} className="ms-5 text-dark">
+            <div style={{marginRight: '15rem', display:'flex', flexDirection:'column', alignItems:'center' }}>
+                <h1 style={{fontWeight:'700', fontSize:'48px'}} className="text-center ms-5 fw-bold">Jendela Ke Masa Lalu</h1>
+                <p style={{width: '500px', textAlign: 'justify' }} className="ms-5 text-dark">
                 Wisata sejarah adalah cara yang penting untuk menghormati dan menjaga warisan budaya serta sejarah manusia, sambil memberikan manfaat edukatif, ekonomi, dan budaya. Ini memainkan peran kunci dalam menjembatani masa lalu dan masa kini, serta dalam mempromosikan pengertian dan perdamaian di antara berbagai budaya dan komunitas di seluruh dunia.
                 </p>
             </div>
-            <div className="position-relative top-0 start-0">
+            <div className="position-relative top-0 start-0 mb-5">
                 <img className="img-fluid position-relative top-0 start-0" src={PPicture} alt="Turis" />
             </div>
             </div>
+            <Footercomponent/>
         </div>
-        </container>
+        
         
     </>
   );

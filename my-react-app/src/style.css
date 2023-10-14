@@ -231,3 +231,13 @@ img:last-child{
   border-radius: 20px;
   margin-right: 30rem;
 }
+.footer{
+  background-color: #08496F;
+  color: white;
+}
+.navbar-w{
+  transition: 0.15s;
+}
+.navbar-w:hover{
+  opacity: 0.7;
+}

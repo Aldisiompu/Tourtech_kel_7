@@ -9,12 +9,12 @@ import pic3 from "../assets/img/tradisional3.png"
 import pic4 from "../assets/img/makanan/Kasuami 1.png"
 import pic5 from "../assets/img/makanan/Kue-Bagea-1 1.png"
 import pic6 from "../assets/img/makanan/Tuli-Tuli 1.png"
+import Footercomponent from "../Component/Fragments/Footercomponent.jsx";
 
 const  Wisatapages = () =>{
     return(
     <>  
-        <container>
-            <div
+        <div
                 className="bg-image img-fluid"
                 style={{
                 backgroundImage: `url(${Bgimage})`,
@@ -92,8 +92,8 @@ const  Wisatapages = () =>{
                         <img  src={pic6}></img>
                     </div>
                 </div>
+                <Footercomponent/>
             </div>
-        </container>
     </>
         
     )

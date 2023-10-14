@@ -2,6 +2,9 @@ import Button from "../Component/Elements/Buttons/Button";
 import Bgimage from "../assets/img/BgAkun.png";
 import { Link } from "react-router-dom";
 import image from "../assets/img/pemandu/aldi.jpeg"
+import Footercomponent from "../Component/Fragments/Footercomponent";
+
+import Navbarwisata from "../Component/Fragments/Navbarwisata";
 
 const Akunsayapages = () => {
   return (
@@ -15,14 +18,10 @@ const Akunsayapages = () => {
             backgroundRepeat: "no-repeat",
             backgroundPosition: "center center",
             height: "100vh", 
-      
-           
           }}
         >
-          {" "}
+          <Navbarwisata/>
           <div className="body">
-          
-            
             <div className="login-container">
             <div className="d-flex gap-3">
             <div className="d-flex align-items-center justify-content-center"   >
@@ -84,10 +83,11 @@ const Akunsayapages = () => {
             </div>
             <div class="d-flex ">
             <a href="/edit" className="ms-auto rounded-2"> <button class="ms-auto rounded-2">Edit</button></a>
+              </div>
             </div>
           </div>
         </div>
-      </div>
+        <Footercomponent/>
       </div>
         
     </>
