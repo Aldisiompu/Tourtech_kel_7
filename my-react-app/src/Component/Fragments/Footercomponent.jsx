@@ -10,18 +10,18 @@ import Gmbrtwiter from "/images/GambarFooter/icontwiter.png";
 const Footercomponent = () => {
   return (
     <div>
-      <footer className="footer  ">
-        <Container>
+      <footer className="footer">
+        <Container className="pt-5 mb-5">
           <Row>
             <Col md={2}>
               <div>
-                <h3 className="mt-3 fw-bold">Tour Tech</h3>
+                <h3 className=" fw-bold">Tour Tech</h3>
               </div>
             </Col>
             <Col md={4}>
               <div>
                 <h5>Tentang Kami</h5>
-                <p>
+                <p style={{textAlign:'justify'}}>
                   Kami ingin para wisatawan yang ingin berkunjung di Buton
                   Tengah mendapatkan pengalaman berwisata yang menyenangkan dan
                   tidak terlupakan
@@ -49,23 +49,23 @@ const Footercomponent = () => {
               <div className="informasi lh-sm">
                 <h5>Informasi</h5>
 
-                <a href="#">
-                  <p>Artikel</p>
+                <a style={{textDecoration:'none'}} href="#">
+                  <p style={{color:"white"}}>Artikel</p>
                 </a>
-                <a href="#">
-                  <p>Tentang kami</p>
+                <a style={{textDecoration:'none'}} href="#">
+                  <p style={{color:"white"}}>Tentang kami</p>
                 </a>
               </div>
               <div>
                 <h5>Ikuti Kami</h5>
-                <div className="ikutikami">
-                  <a href="">
+                <div>
+                  <a  className="me-2" href="">
                     <img src={Gmbrtiktok} alt="" srcset="" />
                   </a>
-                  <a href="">
+                  <a  className="me-2" href="">
                     <img src={Gmbrfb} alt="" srcset="" />
                   </a>
-                  <a href="">
+                  <a  className="me-2" href="">
                     <img src={Gmbrig} alt="" srcset="" />
                   </a>
                   <a href="">
