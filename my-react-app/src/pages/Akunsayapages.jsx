@@ -1,21 +1,13 @@
-
 import Navbarwisata from "../Component/Fragments/Navbarwisata";
 import Bgimage from "../assets/img/wisata/BgAkun.png";
 import image1 from "../assets/img/pemandu/aldi.jpeg";
-// import image2 from "../assets/img/pemandu/Vector.png";
-import Button from "../Component/Elements/Buttons/Button";
-import Bgimage from "../assets/img/BgAkun.png";
-import { Link } from "react-router-dom";
-import image from "../assets/img/pemandu/aldi.jpeg"
 import Footercomponent from "../Component/Fragments/Footercomponent";
+import { Link } from "react-router-dom";
+import { Button } from "react-bootstrap";
 
-
-const Editakunpages = () => {
+const Akunsayapages = () => {
   return (
-     <>
-
     <div className="editakun h-vh-100">
-    
       <div
         className="bg-image"
         style={{
@@ -75,6 +67,7 @@ const Editakunpages = () => {
                     placeholder="ALDI"
                     required
                   />
+                  <hr />
                 </div>
                 <div className="form-group">
                   <label for="email">Email</label>
@@ -85,6 +78,7 @@ const Editakunpages = () => {
                     placeholder="aldi2023@gmail.com"
                     required
                   />
+                  <hr />
                 </div>
                 <div className="form-group">
                   <label for="password">Password</label>
@@ -95,6 +89,7 @@ const Editakunpages = () => {
                     placeholder=".............................."
                     required
                   />
+                  <hr />
                 </div>
                 
               </form>
@@ -102,22 +97,18 @@ const Editakunpages = () => {
           </div>
           
             </div>
-
             <div className="button "
             style={{
               marginLeft:"880px"
             }}>
-            <a href="/akun" className="button ms-auto rounded-2"> <button class="ms-auto rounded-2">Edit</button></a>
+            <Link to="/akun" className="button ms-auto rounded-2"> <Button class="ms-auto rounded-2">Edit</Button> </Link>
             </div>
           </div>
         </div>
+          <Footercomponent/>
       </div>
       
-
-            
-        
-    </>
   );
 };
 
-export default Editakunpages;
+export default Akunsayapages;
