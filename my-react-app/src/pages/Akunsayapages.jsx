@@ -10,7 +10,7 @@ import image from "../assets/img/pemandu/aldi.jpeg"
 import Footercomponent from "../Component/Fragments/Footercomponent";
 
 
-const Editakunpages = () => {
+const Akunsayapages = () => {
   return (
      <>
 
@@ -120,4 +120,4 @@ const Editakunpages = () => {
   );
 };
 
-export default Editakunpages;
+export default Akunsayapages;
