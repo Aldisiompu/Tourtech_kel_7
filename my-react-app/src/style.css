@@ -1,17 +1,20 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,300;0,400;0,500;0,600;0,800;1,500;1,700&display=swap');
+
 * {
   font-family: "Poppins", sans-serif;
-}
-body{
-  overflow-x: hidden;
 }
 
 :root {
   --primary-color: #184662;
+  --blue-color: #528b9e;
+  --skyblue-color:#c6dfeec5;
+  --biru:#045572;
+
 }
 
 /* card di halaman welcome  */
 .populer {
-  margin: 4rem 0px 0px 9rem;
+  margin: 3rem 0px 0px 10rem;
   line-height: 1px;
   display: inline-block; /* Membungkus elemen dalam satu garis */
 }
@@ -24,54 +27,41 @@ body{
   width: auto; /* Biarkan lebar garis mengikuti teks */
 }
 
-/* CSS untuk card */
-.card {
-  margin-top: -10px;
-  width: 280px;
-  border: 1px solid #ccc;
-  border-radius: 8px;
+/* style card pages halaman welcome */
+.cardpg {
+  margin-top: 25px;
+  width: 500px;
   overflow: hidden;
-  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
   transition: transform 0.2s;
-  background-color: #fff;
 }
-
-.card:hover {
+.cardpg:hover {
   transform: translateY(-5px);
 }
 
-.card img {
+.cardpg img {
   max-width: 100%;
-  height: auto;
+  height: 200px;
   display: block;
 }
 
-.card-container {
+.cardpg-container {
   position: relative;
 }
 
-.card-body {
+.cardpg-body {
   position: absolute;
   bottom: 0;
   left: 0;
   right: 0;
-  padding: 10px;
-  background-color: rgba(0, 0, 0, 0.5);
+  padding: 5px;
   text-align: center;
-  color: #fff;
 }
-
-.card h2 {
-  font-size: 1.5rem;
-  margin-bottom: 5px;
-  font-weight: bold;
+.cardpg-body p{
+  font-size: 9px;
 }
-
-.card p {
-  font-size: 1rem;
+.cardpg-body h2{
+  font-size: 5px;
 }
-
-/* card di halaman welcome  */
 
 /* style halaman login start */
 .body {
@@ -143,11 +133,9 @@ button {
 button:hover {
   background-color: #184675;
 }
-
-
 /* style halaman login end */
 
-/* Navbar Wisata dan wisata style */
+/* Navbar Wisata */
 .flexcontainer{
   left: 15%;
   top: 30%;
@@ -160,31 +148,35 @@ button:hover {
   font-weight: 700;
   line-height: 60px;
 }
-
+.Nav{
+  
+  border-bottom: 1px solid white;
+}
 .title-desc{
   margin-bottom: 50px;
 }
 .card-box{
   height: 683px;
   width: 1281px;
+  position: absolute;
   top: 100%;
   background: linear-gradient( rgb(9, 64, 96) , rgb(36, 83, 112), rgb(49, 112, 150));
 }
 
 .flex-card-box{
-  justify-content: space-between;
+  justify-content: space-around;
   display: flex;
   flex-direction: row;
   align-items: center;
-  padding-left: 2.5rem ;
-  padding-bottom: 5rem;
 }
+
 .text-box{
+  margin-left: 40px;
   text-align: justify;
   width: 325px;
   font-size: 16px;
   letter-spacing: 0;
-  margin-right: 3rem;
+  margin-right: 20px;
 }
 .image-container{
   display: flex;
@@ -204,54 +196,221 @@ img:last-child{
 .text-space{
   line-height: 4px;
 }
-.custom-img img{
-  transition: 0.15s;
+
+/* style card pages halaman welcome */
+.cardpg {
+  margin-top: 25px;
+  width: 500px;
+  overflow: hidden;
+  transition: transform 0.2s; 
 }
-.custom-img img:hover{
-  opacity: 0.7;
+.cardpg:hover {
+  transform: translateY(-5px);
 }
-.custom-img img:active{
-  opacity: 0.5;
+.cardpg img {
+  max-width: 100%;
+  height: 200px;
+  display: block;
 }
-.flex-card-box1{
-  justify-content: start;
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  padding-left: 3.5rem ;
-  
+.cardpg-container {
+  position: relative;
 }
-.text-box1{
-  border:  1px solid white;
+.cardpg-body {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: 5px;
+  text-align: center;
+}
+.text-justify-start {
   text-align: justify;
-  width: 550px;
-  font-size: 16px;
-  letter-spacing: 0;
-  padding: 60px 40px 60px 40px;
-  border-radius: 20px;
-  margin-right: 30rem;
+  /*max-width: 7000px;*/
+  font-size: 12px;
+  max-width: fit-content;
 }
-.footer{
-  background-color: #08496F;
-  color: white;
+.cardpg-body p{
+  font-size: 9px;
 }
-.navbar-w{
-  transition: 0.15s;
+.cardpg-body h2{
+  font-size: 5px;
 }
-.navbar-w:hover{
-  opacity: 0.7;
+
+/* Style Home Pages Start*/
+/* Style cardhome di halaman home*/
+.cardhome {
+  margin-top: 25px;
+  width: 230px;
+  overflow: hidden;
+  transition: transform 0.2s;
 }
-.backakun {
-  width: 200px;
+.cardhome:hover {
+  transform: translateY(-5px);
 }
-.akun-container {
-  background-color:  #555859;
-  height: 750px;
-  padding-top: 100px;
+.cardhome img {
+  max-width: 100%;
+  height: 250px;
+  display: block;
 }
-.akun {
-  background-color: rgba(255, 255, 255, 0.3);
+.cardhome-container {
+  position: relative;
+}
+.cardhome-body {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: 5px;
+  text-align: center;
+}
+.text-justify-start {
+  text-align: justify;
+  font-size: 12px;
+  max-width: fit-content;
+}
+.cardhome-body p{
+  font-size: 9px;
+  font-family:'Times New Roman';
+}
+.cardhome-body h5{
+  font-family:'Times New Roman';
+  font-size: 5px;
+}
+
+/* Style bagian cardtop halaman home */
+.kartu {
+  margin-top: 25px;
+  width: 237px;
+  overflow: hidden;
   border-radius: 10px;
-  margin-top: 40px;
-  width: 1050px;
+  box-shadow: 3px 4px 8px rgba(149, 147, 147, 0.1);
+  transition: transform 0.2s;
+  background-color: #003949;
 }
+.kartu:hover {
+  transform: translateY(-5px);
+}
+.kartu img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+.kartu-container {
+  position: relative;
+}
+.kartu-body {
+  position: absolute;
+  bottom: 50px;
+  left: 0;
+  right: 0;
+  padding: 10px;
+  background-color: rgba(200, 199, 199, 0.491);
+  font-family: 'Times New Roman';
+  text-align: center;
+  color: #fff;
+}
+
+/*Style bagian Strength(mengapa memilih kami) halaman home*/
+.Strength{
+  background-color: var(--skyblue-color);
+}
+body{
+  background:#eadbdbeb;
+}
+.profile-area{
+  padding:80px 0;
+}
+.cards{
+box-shadow: 0 0 2px rgba(0,0,0,0.5);
+overflow:hidden;
+border-radius: 15px;
+width:250px;
+height:340px;
+}
+.img2 img{
+  width:80px;
+  height:80px;
+  border-radius: 20%;
+  margin-top: 30px;
+  object-fit: contain;
+}
+.card:hover .img2 img{
+  border-bottom: darkcyan;
+  transition:.7s;
+}
+.main-text{
+  position: relative;
+  height: 180px;
+  padding: 30px 0;
+  text-align: center;
+}
+.main-text h2{
+  text-transform:uppercase;
+  font-weight:900;
+  font-size: 20px;
+  padding-top: -10px;
+  margin: 0 0 20px;
+}
+.main-text p{
+  font-size: 13px;
+  line-height: 15px;
+  padding:0 35px;
+}
+
+/* style about tour halaman home */
+.about{
+  background-color:#054c72;
+}
+.aboutcard {
+  margin-top: 25px;
+  width: 320px;
+  overflow: hidden;
+  transition: transform 0.2s;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+.aboutcard img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+.aboutcard-container {
+  position: relative;
+}
+.aboutcard-body {
+  position: absolute;
+  bottom: 8px;
+  left: 4px;
+  right: 4px;
+  padding: 10px;
+  text-align: center;
+}
+.aboutcard-body p{
+  padding-top: 5px;
+  font-size: 8px;
+  font-family:'Times New Roman';
+}
+.about-container h2 {
+  font-family:'Times New Roman';
+  font-size: 1.5rem;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+.about-container p {
+  font-size: 1rem;
+  max-width: 1000px;
+}
+.text-justify-center {
+  text-align: justify;
+  /*max-width: 7000px;*/
+  max-width: fit-content;
+}
+.gambar:hover {
+  transform: translateY(-6px);
+}
+
+
+
+
+
+
+
