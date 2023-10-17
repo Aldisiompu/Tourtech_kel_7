@@ -21,7 +21,7 @@ const Footercomponent = () => {
             <Col md={4}>
               <div>
                 <h5>Tentang Kami</h5>
-                <p style={{textAlign:'justify'}}>
+                <p style={{ textAlign: "justify" }}>
                   Kami ingin para wisatawan yang ingin berkunjung di Buton
                   Tengah mendapatkan pengalaman berwisata yang menyenangkan dan
                   tidak terlupakan
@@ -49,23 +49,23 @@ const Footercomponent = () => {
               <div className="informasi lh-sm">
                 <h5>Informasi</h5>
 
-                <a style={{textDecoration:'none'}} href="#">
-                  <p style={{color:"white"}}>Artikel</p>
+                <a style={{ textDecoration: "none" }} href="/artikel">
+                  <p style={{ color: "white" }}>Artikel</p>
                 </a>
-                <a style={{textDecoration:'none'}} href="#">
-                  <p style={{color:"white"}}>Tentang kami</p>
+                <a style={{ textDecoration: "none" }} href="#">
+                  <p style={{ color: "white" }}>Tentang kami</p>
                 </a>
               </div>
               <div>
                 <h5>Ikuti Kami</h5>
                 <div>
-                  <a  className="me-2" href="">
+                  <a className="me-2" href="">
                     <img src={Gmbrtiktok} alt="" srcset="" />
                   </a>
-                  <a  className="me-2" href="">
+                  <a className="me-2" href="">
                     <img src={Gmbrfb} alt="" srcset="" />
                   </a>
-                  <a  className="me-2" href="">
+                  <a className="me-2" href="">
                     <img src={Gmbrig} alt="" srcset="" />
                   </a>
                   <a href="">

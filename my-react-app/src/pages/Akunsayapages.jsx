@@ -4,7 +4,7 @@ import Bgimage from "../assets/img/wisata/BgAkun.png";
 import image1 from "../assets/img/pemandu/aldi.jpeg";
 // import image2 from "../assets/img/pemandu/Vector.png";
 import Button from "../Component/Elements/Buttons/Button";
-import Bgimage from "../assets/img/BgAkun.png";
+
 import { Link } from "react-router-dom";
 import image from "../assets/img/pemandu/aldi.jpeg"
 import Footercomponent from "../Component/Fragments/Footercomponent";
@@ -107,10 +107,11 @@ const Editakunpages = () => {
             style={{
               marginLeft:"880px"
             }}>
-            <a href="/akun" className="button ms-auto rounded-2"> <button class="ms-auto rounded-2">Edit</button></a>
+            <Link to = "/edit"  className="button ms-auto rounded-2"> <button class="ms-auto rounded-2">Edit</button></Link>
             </div>
           </div>
         </div>
+        <Footercomponent/>
       </div>
       
 

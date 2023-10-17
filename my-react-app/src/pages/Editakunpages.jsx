@@ -2,7 +2,8 @@
 import Navbarwisata from "../Component/Fragments/Navbarwisata";
 import Bgimage from "../assets/img/wisata/BgAkun.png";
 import image1 from "../assets/img/pemandu/aldi.jpeg";
-import image2 from "../assets/img/pemandu/Vector.png";
+import Footercomponent from "../Component/Fragments/Footercomponent";
+// import image2 from "../assets/img/pemandu/Vector.png";
 
 const Editakunpages = () => {
   return (
@@ -38,7 +39,7 @@ const Editakunpages = () => {
       <div className="akun-container justify-content-center align-items-center  ">
         <div className="akun row mx-auto p-4 gap-3 ">
         <div className="backakun d-block  ">
-            <a href="/akunsaya"><img src={image2} alt="" /></a>
+    
 
 
           </div>
@@ -116,8 +117,9 @@ const Editakunpages = () => {
             </div>
           </div>
         </div>
+        <Footercomponent/>
       </div>
-
+          
         
     </>
 

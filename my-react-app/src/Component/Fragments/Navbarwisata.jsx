@@ -5,7 +5,7 @@ import NavDropdown from 'react-bootstrap/NavDropdown';
 
 const Navbarwisata = () => {
   return (
-    <Navbar className="Nav" expand="lg">
+    <Navbar style={{backgroundColor:'#08496F'}} className="Nav fixed-top" expand="lg">
       <Container>
         <div className="d-flex justify-content-between w-100">
           <Navbar.Brand style={{ color: 'white' }} href="#home">
@@ -50,7 +50,7 @@ const Navbarwisata = () => {
               menuVariant="white"
             >
               <NavDropdown.Item href="/akunsaya">Akun Saya</NavDropdown.Item>
-              <NavDropdown.Item href="/login">Logout</NavDropdown.Item>
+              <NavDropdown.Item href="/">Logout</NavDropdown.Item>
             </NavDropdown>
           </Nav>
         </Navbar.Collapse>
