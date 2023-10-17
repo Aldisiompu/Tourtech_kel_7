@@ -54,7 +54,7 @@ const Loginpages = () => {
                   </Link>
                 </h6>
               </form>
-              <a href="/home"><Button>Masuk</Button></a>
+              <Link to="/home"><Button>Masuk</Button></Link>
             </div>
           </div>
         </div>

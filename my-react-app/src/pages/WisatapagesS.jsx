@@ -23,7 +23,7 @@ const WisatapagesS = () => {
             }}
         >
             <Navbarwisata />
-            <div id='header-wrapper' style={{ marginTop: '150px', marginRight: '60px' }} className="d-flex justify-content-end align-items-center">
+            <div id='header-wrapper' style={{paddingTop:'200px', marginRight: '60px' }} className="d-flex justify-content-end align-items-center">
             <div id='header'  className="w-766 text-light text-center">
                 <h1 style={{ marginBottom: '0', fontSize: '60px', fontWeight: '700' }}>"Terlupakan dalam Waktu</h1>
                 <h1 style={{ marginBottom: '0', fontSize: '60px', fontWeight: '700' }}>Jelajahi Masa Lalu di</h1>

@@ -1,3 +1,372 @@
+
+* {
+  font-family: "Poppins", sans-serif;
+}
+body {
+  overflow-x: hidden;
+}
+
+:root {
+  --primary-color: #184662;
+}
+
+/* card di halaman welcome  */
+.populer {
+  margin: 4rem 0px 0px 9rem;
+  line-height: 1px;
+  display: inline-block; /* Membungkus elemen dalam satu garis */
+}
+
+.underline {
+  margin-top: -4px;
+  border: solid thin 1px;
+  height: 2px;
+  background-color: white;
+  width: auto; /* Biarkan lebar garis mengikuti teks */
+}
+
+/* CSS untuk card */
+.card {
+  margin-top: -10px;
+  width: 280px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s;
+  background-color: #fff;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+}
+
+.card img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+.card-container {
+  position: relative;
+}
+
+.card-body {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: 10px;
+  background-color: rgba(0, 0, 0, 0.5);
+  text-align: center;
+  color: #fff;
+}
+
+.card h2 {
+  font-size: 1.5rem;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+.card p {
+  font-size: 1rem;
+}
+
+/* card di halaman welcome  */
+
+/* style halaman login start */
+.body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+
+  margin: 0;
+  background: transparent;
+}
+
+.login-container {
+  background: rgba(255, 255, 255, 0.2);
+  padding: 30px 50px;
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.login-form {
+  text-align: center;
+  width: 100%;
+}
+
+.login-form h2 {
+  text-align: left;
+  font-size: 24px;
+  margin-bottom: 20px;
+  color: white;
+  font-weight: 600;
+}
+
+.login-form h6 {
+  text-align: left;
+}
+
+.form-group {
+  margin-bottom: 20px;
+  text-align: left;
+}
+
+label {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 5px;
+  color: white;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"] {
+  width: 100%;
+  padding: 8px 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background: #ccc;
+}
+
+button {
+  background-color: #184662;
+  color: #fff;
+  padding: 6px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #184675;
+}
+
+/* style halaman login end */
+
+/* Navbar Wisata dan wisata style */
+.flexcontainer {
+  left: 15%;
+  top: 30%;
+  position: absolute;
+}
+.text {
+  align-self: stretch;
+  color: #ffffff;
+  font-size: 60px;
+  font-weight: 700;
+  line-height: 60px;
+}
+
+.title-desc {
+  margin-bottom: 50px;
+}
+.card-box {
+  height: 683px;
+  width: 1281px;
+  top: 100%;
+  background: linear-gradient(
+    rgb(9, 64, 96),
+    rgb(36, 83, 112),
+    rgb(49, 112, 150)
+  );
+}
+
+.flex-card-box {
+  justify-content: space-between;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding-left: 2.5rem;
+  padding-bottom: 5rem;
+}
+.text-box {
+  text-align: justify;
+  width: 325px;
+  font-size: 16px;
+  letter-spacing: 0;
+  margin-right: 3rem;
+}
+
+.card-box {
+  padding-bottom: 60px;
+}
+.text-space {
+  line-height: 4px;
+}
+.custom-img img {
+  transition: 0.15s;
+}
+.custom-img img:hover {
+  opacity: 0.7;
+}
+.custom-img img:active {
+  opacity: 0.5;
+}
+.flex-card-box1 {
+  justify-content: start;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding-left: 3.5rem;
+}
+.text-box1 {
+  border: 1px solid white;
+  text-align: justify;
+  width: 550px;
+  font-size: 16px;
+  letter-spacing: 0;
+  padding: 60px 40px 60px 40px;
+  border-radius: 20px;
+  margin-right: 30rem;
+}
+.footer {
+  background-color: #08496f;
+  color: white;
+}
+.backakun {
+  width: 200px;
+}
+.akun-container {
+  background-color: #555859;
+  height: 750px;
+  padding-top: 100px;
+}
+.akun {
+  background-color: rgba(255, 255, 255, 0.3);
+  border-radius: 10px;
+  margin-top: 40px;
+  width: 1050px;
+}
+#background1 {
+  background-image: url("../../public/images/backgroundtentang.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  height: 85vh;
+  font-family: Times New Roman;
+}
+
+.slide-in {
+  animation: slideIn 1s ease forwards;
+  /* Adjust the animation duration and other properties as needed */
+}
+.show-content {
+  animation: slideIn 0.5s ease-in-out forwards;
+}
+
+#text-penjelasan {
+  text-align: justify;
+  font-size: 14px;
+  margin-right: 100px;
+}
+.image-container {
+  display: flex;
+  align-items: start;
+  justify-content: center;
+}
+.image-container1 {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  margin-right: 1.5rem;
+}
+.image-container1 img {
+  width: 439px;
+  height: 250px;
+  margin-bottom: 1.25rem;
+}
+.image-container2 img {
+  width: 336px;
+  height: 520px;
+}
+.image-container3 img {
+  width: 439px;
+  height: 250px;
+  margin-bottom: 1.25rem;
+}
+.image-container3 {
+  margin-left: 1.5rem;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+#wrapper {
+  display: flex;
+  align-items: center;
+}
+.background-text {
+  height: 412px;
+  background-color: #d9d9d9;
+  border-radius: 10px;
+  padding: 35px;
+  margin-right: 20px;
+}
+@media screen and (max-width: 800px) {
+  #penjelasan {
+    flex-direction: column;
+    align-items: center; /* The width is 100%, when the viewport is 800px or smaller */
+  }
+  #penjelasan p {
+    margin-right: 0;
+  }
+  #carousel {
+    width: 100%;
+  }
+  #header-penjelasan {
+    text-align: center;
+  }
+  .image-container {
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+  }
+  #text-penjelasan {
+    width: 100%;
+  }
+  .image-container img {
+    width: 325px;
+    height: auto;
+    padding: 0;
+  }
+  .image-container1 {
+    margin-right: 0;
+    width: 200px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .image-container3 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 1.5rem;
+    margin-left: 0;
+  }
+  #wrapper {
+    flex-direction: column;
+  }
+  .background-text {
+    padding-top: 40px;
+    padding-right: 12px;
+    padding-left: 12px;
+    margin: 0;
+    margin-bottom: 1.5rem;
+  }
+}
+@keyframes slideIn {
+  0% {
+    transform: translateX(-100%);
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+=======
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,300;0,400;0,500;0,600;0,800;1,500;1,700&display=swap');
 
 * {
@@ -407,9 +776,6 @@ height:340px;
 .gambar:hover {
   transform: translateY(-6px);
 }
-
-
-
 
 
 

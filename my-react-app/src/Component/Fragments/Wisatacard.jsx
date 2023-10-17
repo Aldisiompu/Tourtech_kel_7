@@ -5,7 +5,7 @@ import pic3 from '../../assets/img/WisataB3.png';
 import "../../style.css"
 const CenteredCard = () => {
 return (
-    <div className="d-flex justify-content-center align-items-center " style={{ height: '75vh' }}>
+    <div className="d-flex justify-content-center align-items-center " style={{ height: '80vh' }}>
       <Card className='card-box'>
         <div className='text-space'>
             <Card.Title className="mt-5 mb-4 fs-2 text-light text-center" >Wisata Budaya</Card.Title>

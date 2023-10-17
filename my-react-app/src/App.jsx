@@ -8,6 +8,8 @@ import WisatapagesA from "./pages/WisatapagesA";
 import WisatapagesS from "./pages/WisatapagesS";
 import Editakunpages from "./pages/Editakunpages";
 import Akunsayapages from "./pages/Akunsayapages";
+import Artikelpages from "./pages/Artikelpages";
+
 function App() {
   return (
     <>
@@ -17,11 +19,12 @@ function App() {
         <Route path="/login" Component={Loginpages} />
         <Route path="/register" Component={Registerpages} />
         <Route path="/home" Component={Homepages} />
-        <Route path="/wisata" Component={Wisatapages}/>
-        <Route path="/wisataS" Component={WisatapagesS}/>
-        <Route path="wisataA" Component={WisatapagesA}/>
-        <Route path="/edit" Component={Editakunpages}/>
-        <Route path="/akunsaya" Component={Akunsayapages}/>
+        <Route path="/wisata" Component={Wisatapages} />
+        <Route path="/wisataS" Component={WisatapagesS} />
+        <Route path="wisataA" Component={WisatapagesA} />
+        <Route path="/edit" Component={Editakunpages} />
+        <Route path="/akunsaya" Component={Akunsayapages} />
+        <Route path="/artikel" Component={Artikelpages} />
       </Routes>
       {/* <Footercomponent /> */}
     </>

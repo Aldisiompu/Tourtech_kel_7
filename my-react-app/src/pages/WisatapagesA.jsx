@@ -31,7 +31,7 @@ const WisatapagesA = () => {
             className="header-text"
             style={{ display: 'flex', justifyContent: 'start', alignItems: 'center' }}
           >
-            <div style={{ marginLeft: '100px', marginBottom: '0' }} className="text-center mt-5 text-light">
+            <div style={{marginTop:'100px', marginLeft: '100px', marginBottom: '0' }} className="text-center text-light">
               <h1 style={{ marginBottom: '0', fontSize: '60px', fontWeight: '700' }}>Eksplorasi</h1>
               <h1 style={{ marginBottom: '0', fontSize: '60px', fontWeight: '700' }}>Keindahan Alam</h1>
               <h1 style={{ marginBottom: '0', fontSize: '60px', fontWeight: '700' }}>Buton Tengah</h1>
